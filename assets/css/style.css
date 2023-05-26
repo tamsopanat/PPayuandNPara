@@ -82,6 +82,11 @@ body {
     overflow: hidden;
 }
 
+.wrapper li input{
+   margin-right: 10px;
+}
+
+
 .taskList li i {
     position: absolute;
     padding-top: 12px;
