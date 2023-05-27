@@ -52,6 +52,7 @@ function showTasks() {
     inputBox.value = ''; //once task added leave the input field blank
     addBtn.classList.remove("active")
 
+    // add task done checkbox function
     const checkboxes = document.querySelectorAll('.checkbox');
     console.log(checkboxes)
     checkboxes.forEach((element) =>{

@@ -22,10 +22,18 @@ body {
     border-radius: 10px;
     padding: 25px;
 }
-
+/* 
 .wrapper header {
     font-size: 30px;
     font-weight: 600;
+} */
+
+.wrapper header input {
+    font-size: 30px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background: none;
 }
 
 .wrapper .inputBlock {
@@ -59,7 +67,7 @@ body {
     pointer-events: none;
 }
 
-.inputBlock button.active{
+.inputBlock button.active {
     opacity: 1;
     pointer-events: auto;
 }
@@ -82,10 +90,14 @@ body {
     overflow: hidden;
 }
 
-.wrapper li input{
-   margin-right: 10px;
+.wrapper li input {
+    margin-right: 10px;
+
 }
 
+.wrapper li input:checked {
+    accent-color: rgb(77, 36, 61);
+}
 
 .taskList li i {
     position: absolute;
@@ -98,11 +110,17 @@ body {
     text-align: center;
     border-radius: 0 3px 3px 0;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease, box-shadow 0.3s;
 }
 
 .taskList li:hover i {
-    right: 0px;
+    right: 5px;
+}
+
+.taskList li:hover {
+    transform: translateZ(5px);
+    transform: translateX(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -127,7 +145,7 @@ body {
     pointer-events: none;
 }
 
-.footer button.active{
+.footer button.active {
     opacity: 1;
     pointer-events: auto;
 }
